@@ -1,3 +1,5 @@
+import static jdk.nashorn.internal.parser.TokenType.CONST;
+
 public class Main {
 
     static byte b = 5;//128, 8b
@@ -11,7 +13,12 @@ public class Main {
     static boolean bool1 = true;
     static boolean bool2 = false;
 
-    public static void main(String[] args){
+    static String st = "hello, Vika";// є тільки у ссилочних типах
+    static char c = 'd';
+
+
+
+    /*public static void main(String[] args) {
 
         System.out.println("byte: " + b);
         System.out.println("short: " + sh);
@@ -24,9 +31,21 @@ public class Main {
         System.out.println("boolean1: " + bool1);
         System.out.println("boolean2: " + bool2);
 
-
-
+        System.out.println(st);
+        System.out.println(c);
 
     }
+    */
+        static final int CONST = 55;
+
+        public static void main(String[] args) {
+        System.out.println(CONST);
+
+        }
+
+
+
+
+
 
 }
